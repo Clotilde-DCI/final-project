@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">DENIS MAILLARD</a></li>
+            <li><a href="aquarelles.html">WATERCOLORS</a></li>
+            <li><a href="paintings.html">DIGITAL PAINTINGS</a></li>
+            <li><a href="about-me.html">ABOUT THE ARTIST</a></li>
+            <li><a href="order.html">BUY A PIECE</a></li>
+            <li><a href="contact-me.html">CONTACT</a></li>
+            <div class="clearfix"></div>
+        </ul>
+    </nav>
+    <h1>Contact me</h1>
+    <h2>Please leave your message here</h2>
+    <form action="contact">
+        <div>
+            <label for="fname" class="label-width">First name (Prénom)</label>
+            <input type="text" name="firstname" id="fname" required>
+        </div>
+
+        <div>
+            <label for="lname" class="label-width">Last name (Nom)</label>
+            <input type="text" name="lastname" id="lname" required>
+        </div>
+
+        <div>
+            <label for="email" class="label-width">Email (E-mail)</label>
+            <input type="email" name="email" id="email" required>
+        </div>
+
+        <div>
+            <label for="telephone" class="label-width">Phone number (Téléphone)</label>
+            <input type="tel" name="telephone" id="telephone">
+        </div>
+
+        <div>
+            <label for="interest" class="label-width">I am contacting you regarding (Je vous contacte à propos de):</label>
+        </div>
+
+        <div>
+            <label for="exhibition" class="label-width">An art exhibition (exposition)</label>
+            <input type="radio" name="interest" id="exhibition">
+        </div>
+
+        <div>
+            <label for="purchase" class="label-width">An artwork purchase (achat d'une oeuvre)</label>
+            <input type="radio" name="interest" id="purchase">
+        </div>
+
+        <div>
+            <label for="lesson" class="label-width">Drawing lessons (cours de dessin)</label>
+            <input type="radio" name="interest" id="drawing-lesson">
+        </div>
+
+        <div>
+            <label for="other" class="label-width">Watercolor lessons (cours d'aquarelle)</label>
+            <input type="radio" name="interest" id="watercolor-lesson">
+        </div>
+
+        <div>
+            <label for="other" class="label-width">Other (autre chose)</label>
+            <input type="radio" name="interest" id="other">
+        </div>
+
+        <div>
+            <label for="subscribe-to-newsletter" class="label-width">Send me news about future classes & events per email. (Informez-moi des prochains cours & événements par e-mail).</label>
+            <input type="checkbox" name="subscribe-to-newsletter" id="subscribe-to-newsletter">
+        </div>
+
+        <div>
+            <label for="accept-terms" class="label-width">Yes, I agree with the terms and conditions of this website*** (Oui, j'accepte les termes et conditions***).</label>
+            <input type="checkbox" name="accept-terms" id="accept-terms" required>
+        </div>
+
+        <div>
+            <label for="country" class="label-width">I live in (Pays de résidence)</label>
+            <select name="country" id="country" required>
+                <option value="">Choose a country</option>
+                <option value="au">Austria</option>
+                <option value="be">Belgium</option>
+                <option value="fr">France</option>
+                <option value="de">Germany</option>
+                <option value="gb">Great Britain</option>
+                <option value="ire">Ireland</option>
+                <option value="it">Italy</option>
+                <option value="es">Spain</option>
+                <option value="sz">Switzerland</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="msg" class="label-width">My message (Mon message):</label>
+            <textarea name="message" id="msg" cols="50" rows="10">Hi Denis, ...</textarea>
+        </div>
+
+        <div>
+            <label for="send-button" class="label-width">  </label>
+            <input type="submit" value="Send message" id="send-button">
+        </div>    
+
+    </form>
+</body>
+</html>
